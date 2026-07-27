@@ -1,0 +1,8 @@
+Main evaluation metrics:
+
+Recall@K measures how many of the relevant items are successfully included in the top K recommendations. It focuses on coverage—how well the system finds items the user is actually interested in.
+Precision@K measures how many of the recommended K items are actually relevant. It emphasizes recommendation quality, especially when users only see a limited number of suggestions.
+F1@K combines Precision and Recall using the harmonic mean, providing a balanced score when both metrics are important.
+Mean Average Precision (MAP) evaluates not only whether relevant items are recommended but also whether they appear near the top of the ranked list. Higher-ranked relevant items produce a better score.
+Mean Reciprocal Rank (MRR) focuses on the position of the first relevant recommendation. It rewards systems that present a useful recommendation as early as possible.
+Normalized Discounted Cumulative Gain (NDCG) measures ranking quality by considering both item relevance and position. Highly relevant items placed near the top receive the greatest reward, and the score is normalized to enable comparisons across recommendation lists
