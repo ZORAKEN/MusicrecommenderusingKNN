@@ -1,6 +1,6 @@
 # 🎵 Music Recommender System
 
-A content-based Music Recommendation System built using **Python**, **Machine Learning**, **TF-IDF Vectorization**, **Cosine Similarity**, and **Streamlit**. The application recommends songs similar to the selected song and displays their album covers using the Spotify API.
+A content-based Music Recommendation System built using **Python**, **Machine Learning**, **TF-IDF Vectorization**, **Cosine Similarity**, and **Streamlit**. The application recommends songs similar to the selected song and displays their album covers using the Spotify API.The recommender() function first finds the selected song in the dataset, computes its cosine similarity with all other songs using their TF-IDF text representations, and ranks them by similarity.What makes this approach different from many YouTube music recommender tutorials is that it computes cosine similarity dynamically for the selected song instead of using a precomputed similarity matrix loaded from a pickle file. Many tutorials create and save a full N×N similarity matrix beforehand, which is faster during prediction but consumes much more memory and requires recomputing the entire matrix whenever new songs are added.
 
 ## 🚀 Features
 
